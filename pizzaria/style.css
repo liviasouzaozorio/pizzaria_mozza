@@ -1,0 +1,86 @@
+/* 1. Reset Básico e Variáveis */
+:root {
+    --cor-fundo: #121214;       /* Cinza muito escuro (quase preto) */
+    --cor-texto: #E1E1E6;       /* Branco gelo */
+    --cor-destaque: #FF9F1C;    /* Laranja vibrante */
+    --fonte-titulo: 'Oswald', sans-serif;
+    --fonte-texto: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+}
+
+/* 2. Estilização do Header */
+.header {
+    position: fixed; /* Fixa o menu no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 8%; /* Espaçamento interno */
+    background-color: rgba(18, 18, 20, 0.95); /* Fundo levemente transparente */
+    display: flex;
+    justify-content: space-between; /* Espalha os itens (Logo - Menu - Botão) */
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+/* 3. Logo */
+.logo {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem; /* 32px */
+    color: var(--cor-texto);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.logo .ponto {
+    color: var(--cor-destaque); /* O ponto laranja */
+    font-size: 2.5rem;
+}
+
+/* 4. Navegação */
+.navbar ul {
+    display: flex;
+    gap: 40px; /* Espaço entre os links */
+}
+
+.navbar a {
+    color: var(--cor-texto);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--cor-destaque);
+}
+
+/* 5. Botão de Chamada (CTA) */
+.btn-cta {
+    padding: 10px 25px;
+    background-color: var(--cor-destaque);
+    color: #000; /* Texto preto no fundo laranja lê melhor */
+    font-weight: 700;
+    border-radius: 50px; /* Bordas redondas */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-cta:hover {
+    transform: scale(1.05); /* Aumenta um pouco */
+    box-shadow: 0px 0px 15px rgba(255, 159, 28, 0.4); /* Brilho laranja */
+}
+.corpo{
+    width:100%;
+}
